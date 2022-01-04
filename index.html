@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
+    crossorigin="anonymous">
+    <script defer src="script.js"></script>
+    <title>Landing Page</title>
+</head>
+<body>
+    
+    <div id="mainPage">
+        <span class="sidebar">
+            <a href="#" onclick="openSideBarMenu()">
+            <i class="fas fa-bars"></i>
+            </a>
+        </span>
+
+        <div id="menu" class="navbar">
+            <a href="#" class="close" onclick="closeSideBarMenu()">
+            <i class="fas fa-times"></i>
+            </a>
+            <a href="#">Home</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Resume</a>
+        </div>
+
+        <div id="text" class="center">
+            <h1 class="name">SOMRUDEE <br>NIELSEN</h1>
+        
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Inventore sapiente consequuntur aperiam earum, explicabo non?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, consequuntur.</p>    
+               
+        </div>
+
+        <!--open modal box button-->
+        <div class="openBtn">    
+                <a href="#" id="button" class="button">Contact Me</a>
+        </div>
+
+
+        <!--right side image-->
+        <img class="image"src="images/Pim.jpg" alt="pim">
+        
+        
+    </div>
+       <!--modal box--> 
+         <div class="bg-modal">
+             <div class="modal-contents">
+
+                <div class="closeBtn">&times;</div>
+
+                <form action="">
+                    <label for="fname">Name:</label><br>
+                    <input type="text" placeholder=""><br>
+                    <label for="email">Email:</label><br>
+                    <input type="email" placeholder=""><br>
+                    <label for="message">Message:</label>
+                    <input type="text" placeholder=""><br><br>
+                    <a href="#" class="button">Submit</a>
+                </form>
+             </div>
+         </div>   
+      
+
+      
+
+
+    <script>
+
+        function openSideBarMenu(){
+            document.getElementById("menu").style.width = "250px";
+            document.getElementById("mainPage").stye.marginLeft = "250px";
+        };
+
+        function closeSideBarMenu(){
+            document.getElementById("menu").style.width = "0";
+            documnet.getElementById("mainPage").stye.marginLeft ="0";
+        };
+
+        
+    </script>
+    
+   
+      
+</body>
+</html>
